@@ -67,7 +67,7 @@ const ServicesSection = () => {
                 {service.description}
               </p>
               <button className="text-blue-600 text-sm sm:text-base font-medium flex items-center gap-1 hover:underline">
-                Know more <span>&rarr;</span>
+                Buy more <span>&rarr;</span>
               </button>
             </div>
           ))}

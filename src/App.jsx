@@ -9,20 +9,19 @@ import WhyNexzem from "./Components/WhyNexzem";
 import Testimonials from "./Components/Testinonials";
 import FAQSection from "./Components/FAQSection";
 import ConatctUs from "./Components/Contact";
+import { Route, Routes } from "react-router-dom";
+import Privacy from "./Components/privacy/Privacy";
+import Home from "./Components/home/Home";
+import Terms from "./Components/terms/Terms";
 
 const App = () => {
   return (
     <div>
-      <Navbar />
-      <HeroSection />
-      <ServicesSection />
-      <DevelopmentProcess />
-      <Industries />
-      <WhyNexzem />
-      <Testimonials />
-      <ConatctUs />
-      <FAQSection />
-      <Footer />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/privacy" element={<Privacy />} />
+        <Route path="/terms" element={<Terms />} />
+      </Routes>
     </div>
   );
 };

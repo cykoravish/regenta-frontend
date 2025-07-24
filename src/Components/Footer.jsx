@@ -5,6 +5,7 @@ import {
   FaInstagram,
   FaWhatsapp,
 } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -13,7 +14,7 @@ const Footer = () => {
         <div>
           <p>Regenta International</p>
           <p className="text-sm">
-            RegetaInternational Technologies is a dynamic IT and software
+            RegentaInternational Technologies is a dynamic IT and software
             company, dedicated to excellence in technology solutions.
           </p>
         </div>
@@ -27,24 +28,24 @@ const Footer = () => {
             <strong>Phone:</strong> +91-7302622997
           </p>
           <p className="text-sm mt-2">
-            <strong>Email:</strong> info@regetainternational.in
+            <strong>Email:</strong> info@regentainternational.in
           </p>
         </div>
 
-        {/* <div>
-          <h3 className="text-lg font-bold mb-3">Useful Links</h3>
+        <div>
+          <h3 className="text-lg font-bold mb-3">Legal</h3>
           <ul className="text-sm space-y-2">
             <li>
-              <a href="#" className="hover:underline">
-                Home
-              </a>
+              <Link to="/privacy" className="hover:underline">
+                Privacy & Policy
+              </Link>
             </li>
             <li>
-              <a href="#" className="hover:underline">
-                About Us
-              </a>
+              <Link to="/terms" className="hover:underline">
+                Term & Condition
+              </Link>
             </li>
-            <li>
+            {/* <li>
               <a href="#" className="hover:underline">
                 Career
               </a>
@@ -58,18 +59,24 @@ const Footer = () => {
               <a href="#" className="hover:underline">
                 Blogs
               </a>
-            </li>
+            </li> */}
           </ul>
-        </div> */}
+        </div>
 
         <div>
-          <h3 className="text-lg font-bold mb-3">Subscribe To Our Newsletter</h3>
-          <p className="text-sm mb-4">
-            Don’t Miss The Latest Update.
-          </p>
+          <h3 className="text-lg font-bold mb-3">
+            Subscribe To Our Newsletter
+          </h3>
+          <p className="text-sm mb-4">Don’t Miss The Latest Update.</p>
           <div className="flex space-x-3">
-           <input type="text" className="border rounded p-2" placeholder="enter your email" />
-           <button className="bg-blue-600 p-2 rounded-md text-white">Subscribe</button>
+            <input
+              type="text"
+              className="border rounded p-2"
+              placeholder="enter your email"
+            />
+            <button className="bg-blue-600 p-2 rounded-md text-white">
+              Subscribe
+            </button>
           </div>
         </div>
       </div>

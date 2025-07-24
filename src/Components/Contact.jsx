@@ -63,7 +63,7 @@ const ContactUs = () => {
                 href="mailto:hello@example.com"
                 className="underline hover:text-blue-600"
               >
-               info@regetainternational.in
+               info@regentainternational.in
               </a>
             </li>
             <li>
