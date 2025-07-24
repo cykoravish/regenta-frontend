@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+/* eslint-disable no-unused-vars */
+import React, { useEffect, useState } from "react";
 import {
   ChevronDown,
   ChevronUp,
@@ -8,10 +9,11 @@ import {
   FileText,
   AlertTriangle,
   Award,
+  ArrowLeft,
 } from "lucide-react";
 import { Link } from "react-router-dom";
 
-const PrivacyPolicyPage = () => {
+const Privacy = () => {
   const [expandedSections, setExpandedSections] = useState({});
 
   const toggleSection = (sectionId) => {
@@ -59,28 +61,33 @@ const PrivacyPolicyPage = () => {
     );
   };
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100">
       {/* Header */}
-    <div className="bg-white shadow-sm border-b">
-  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 relative">
-    {/* Go Back Button */}
-    <Link to="/"
-      className="absolute left-4 top-4 text-black font-medium"
-    >
-      ← Go Back
-    </Link>
+      <div className="bg-white shadow-sm border-b">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 relative">
+          {/* Go Back Button */}
+          <Link
+            to="/"
+            className="flex items-center space-x-2 px-4 py-2 text-gray-600 hover:text-gray-800 hover:bg-gray-100 rounded-lg transition-colors duration-200"
+          >
+            <ArrowLeft className="h-5 w-5" />
+            <span className="font-medium">Go Back</span>
+          </Link>
 
-    {/* Centered Content */}
-    <div className="text-center">
-      <h1 className="text-4xl font-bold text-gray-900 mb-2">
-        Company Policy Norms
-      </h1>
-      <p className="text-xl text-gray-600 mb-4">Regenta International</p>
-    </div>
-  </div>
-</div>
-
+          {/* Centered Content */}
+          <div className="text-center">
+            <h1 className="text-4xl font-bold text-gray-900 mb-2">
+              Company Policy Norms
+            </h1>
+            <p className="text-xl text-gray-600 mb-4">Regenta International</p>
+          </div>
+        </div>
+      </div>
 
       {/* Main Content */}
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
@@ -277,7 +284,7 @@ const PrivacyPolicyPage = () => {
                         Up to 6 days per year
                       </td>
                       <td className="border border-gray-300 px-4 py-2">
-                        Medical certificate for >2 days
+                        Medical certificate for 2 days
                       </td>
                     </tr>
                     <tr>
@@ -518,5 +525,4 @@ const PrivacyPolicyPage = () => {
     </div>
   );
 };
-
-export default PrivacyPolicyPage;
+export default Privacy;

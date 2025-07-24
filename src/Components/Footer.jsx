@@ -45,6 +45,11 @@ const Footer = () => {
                 Term & Condition
               </Link>
             </li>
+            <li>
+              <Link to="/return" className="hover:underline">
+                Return & Refund
+              </Link>
+            </li>
             {/* <li>
               <a href="#" className="hover:underline">
                 Career
