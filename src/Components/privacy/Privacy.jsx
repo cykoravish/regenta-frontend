@@ -368,7 +368,7 @@ const Privacy = () => {
                     protection regulations
                   </li>
                   <li>
-                    All intellectual property belongs to Regenta International
+                    All intellectual property belongs to Regenta International.
                   </li>
                   <li>Mandatory Non-Disclosure Agreement (NDA)</li>
                   <li>Unauthorized sharing may result in legal action</li>
