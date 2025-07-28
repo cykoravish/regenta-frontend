@@ -72,7 +72,7 @@ const ServicesSection = () => {
 
   useEffect(() => {
     let attempts = 0;
-    const maxAttempts = 50; // 5 seconds max wait time
+    const maxAttempts = 50; // 5 sec max wait time
 
     const checkRazorpay = () => {
       if (window.Razorpay) {
